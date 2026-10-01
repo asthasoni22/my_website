@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Astha Soni - AI/ML Engineer</title>
+    <meta
+      name="description"
+      content="Astha Soni is an AI/ML engineer focused on production machine learning, generative AI, and observable systems. Open to full-time ML / Data Scientist roles."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top">
+          <img class="brand-mark" src="assets/favicon.svg" alt="" />
+          Astha Soni
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <ul id="site-nav" class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" id="top">
+        <div class="hero-grid">
+          <div>
+            <p class="kicker">Open to full-time ML / Data Scientists role</p>
+            <h1>Astha Soni</h1>
+            <p class="lede">
+              AI/ML Engineer &amp; Generative AI specialist. I design, train, and ship
+              production systems - guardrails, forecasting, NLP, and the pipelines that
+              keep them reliable after deploy.
+            </p>
+            <div class="contact-row">
+              <a class="chip" href="mailto:s.astha6880@gmail.com">s.astha6880@gmail.com</a>
+              <a class="chip" href="https://www.linkedin.com/in/asthaasoni22/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="chip" href="https://github.com/asthasoni22" target="_blank" rel="noreferrer">GitHub</a>
+              <span class="chip">United States</span>
+            </div>
+            <svg class="signal" viewBox="0 0 640 48" aria-hidden="true">
+              <path
+                d="M0 30 C40 30 50 10 80 18 C120 30 140 40 180 22 C220 6 250 38 300 26 C350 12 380 8 430 28 C480 46 520 16 580 22 C610 26 630 24 640 20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+          <div class="portrait-wrap">
+            <img
+              class="portrait"
+              data-portrait
+              src="assets/astha.png"
+              alt="Portrait of Astha Soni"
+              width="420"
+              height="420"
+            />
+          </div>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><strong>3+</strong><span>years in applied ML</span></div>
+          <div class="kpi"><strong>8%</strong><span>guardrail ensemble lift</span></div>
+          <div class="kpi"><strong>42%</strong><span>faster TTS data refresh</span></div>
+          <div class="kpi"><strong>99.5%</strong><span>inference uptime</span></div>
+        </div>
+      </section>
+
+      <section class="wrap" id="about">
+        <div class="section-head">
+          <h2>Model card</h2>
+          <p>A short spec for how I work — the same clarity I expect from a production model.</p>
+        </div>
+        <dl class="model-card">
+          <div>
+            <dt>Task</dt>
+            <dd>Build ML and generative AI that holds up in production: accuracy, latency, drift, and operator trust.</dd>
+            <dt>Domains</dt>
+            <dd>AI safety / guardrails, financial intelligence, clinical risk modeling on de-identified EHR.</dd>
+          </div>
+          <div>
+            <dt>Stack</dt>
+            <dd>Python, Spark, Databricks, AWS, Kubernetes, FastAPI, LangChain, Hugging Face, MLflow, Prometheus.</dd>
+            <dt>Evaluation</dt>
+            <dd>Metrics first. Dashboards, explainability, labeling quality, and early drift alerts over one-off notebooks.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="wrap" id="work">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <p>Enterprise ML with measurable outcomes. Open each role for the full story.</p>
+        </div>
+        <div class="work">
+          <article>
+            <div class="work-top">
+              <div>
+                <h3>Machine Learning Engineer · Zscaler</h3>
+                <p class="role">May 2025 – May 2026 · California, USA</p>
+              </div>
+            </div>
+            <div class="metrics">
+              <span>12 KPIs · 25 guardrail models</span>
+              <span>42% lower ETL latency</span>
+              <span>60% faster incident MTTR</span>
+            </div>
+            <p>
+              Production AI guardrails for jailbreak detection: evaluation, data pipelines,
+              explainability, synthetic data, and live monitoring.
+            </p>
+            <details>
+              <summary>Read the work</summary>
+              <ul>
+                <li>Defined and tracked 12 KPIs for 25 jailbreak-detection models; a baseline dashboard surfaced 3 underperforming models and an 8% ensemble accuracy gain after retraining.</li>
+                <li>Built an idempotent AWS EC2 ETL job ingesting audio from ElevenLabs, Google Cloud TTS, and XTTS, with checksums and versioning; pipeline latency dropped from 8 min to 4.6 min (42%).</li>
+                <li>Benchmarking SHAP, LIME, Integrated Gradients, Feature Ablation, Attention Rollout, and Occlusion on 500k predictions; SHAP TreeExplainer at 18ms vs LIME at 280ms, 35% faster inference at 94% explanation faithfulness.</li>
+                <li>Prompt-based synthetic data across multiple LLMs generated 100k+ validated samples; production model reached 91% detection on customer edge cases.</li>
+                <li>Grafana dashboards on 8 KPIs from KServe/Prometheus, with 2% drift alerts; 60% lower MTTR and two incidents prevented.</li>
+                <li>Labeling standards with 85%+ inter-annotator agreement and Airflow checks on high-entropy labels; consistency rose from 76% to 91%.</li>
+              </ul>
+            </details>
+          </article>
+
+          <article>
+            <div class="work-top">
+              <div>
+                <h3>Graduate Research Assistant · Stony Brook University</h3>
+                <p class="role">Aug 2025 – Dec 2025 · United States · Prof. Weihao Wang &amp; Dr. Farrukh M. Koraishy</p>
+              </div>
+            </div>
+            <div class="metrics">
+              <span>De-identified EHR</span>
+              <span>CKD &amp; cancer cohorts</span>
+              <span>Cox PH + tree models</span>
+            </div>
+            <p>
+              Clinical ML on hospital EHR: cohort construction, imbalance-aware models, and survival analysis for disease risk.
+            </p>
+            <details>
+              <summary>Read the work</summary>
+              <ul>
+                <li>Analyzed de-identified EHR from Stony Brook Hospital in SQL and Python: cleaning, feature engineering on labs, diagnoses, and demographics.</li>
+                <li>Built cohorts for chronic kidney disease and cancer populations.</li>
+                <li>Reproducible pipelines with Random Forest, Decision Trees, SMOTE for class imbalance, and Cox proportional hazards models for risk factors.</li>
+              </ul>
+            </details>
+          </article>
+
+          <article>
+            <div class="work-top">
+              <div>
+                <h3>ML Engineer · S&amp;P Global India</h3>
+                <p class="role">Apr 2022 – Jul 2024 · Gujarat, India</p>
+              </div>
+            </div>
+            <div class="metrics">
+              <span>35+ data sources</span>
+              <span>10M events / day</span>
+              <span>99.5% API uptime</span>
+            </div>
+            <p>
+              Financial intelligence platform: lakehouse architecture, streaming, credit-risk models, and NLP over filings and news.
+            </p>
+            <details>
+              <summary>Read the work</summary>
+              <ul>
+                <li>Led data architecture ingesting 35+ sources into a 3-tier Databricks Delta Lake; analytics latency 45s to 8s, storage cost down 23%.</li>
+                <li>Spark Structured Streaming for 10M financial events/day at ~4 minute end-to-end latency versus 45 minutes batch, with Delta merges for late news.</li>
+                <li>LightGBM, CatBoost, and Temporal Convolutional Networks for rating migration, default probability, and stress testing; 18% fewer false positives.</li>
+                <li>NLP on 5M+ documents with FinBERT and RoBERTa, chained into XGBoost default scoring; 65% less manual review.</li>
+                <li>Feature store and embeddings with MLflow, Feast, and vector databases; 22% less retraining effort across credit, ESG, and analytics models.</li>
+                <li>Docker, Kubernetes, and KServe microservices with Kubeflow, Prometheus, and Grafana; 99.5% uptime.</li>
+              </ul>
+            </details>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap" id="projects">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Systems thinking in smaller surfaces - agents, synthetic data, and classic AI.</p>
+        </div>
+        <div class="projects">
+          <article class="project">
+            <h3>MCP Chat</h3>
+            <p>LLM-powered CLI document manager using Model Context Protocol patterns: @references, /tools, and autocomplete via the Anthropic API.</p>
+            <a href="https://github.com/asthasoni22/mcp_server_document_manager" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+          <article class="project">
+            <h3>SAGA</h3>
+            <p>Semantic Active Generative Augmentation — multimodal agentic framework (Gemini + Vision Transformers) with a 3-stage filter (92% precision) and 10k+ AffectNet samples (+6% OOD generalization).</p>
+            <a href="https://github.com/asthasoni22/SAGA_image_classification" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+          <article class="project">
+            <h3>Minesweeper AI</h3>
+            <p>Knowledge-based Python agent for Minesweeper. Logical inference over revealed cells to mark mines and play safe moves.</p>
+            <a href="https://github.com/asthasoni22/Mine-Sweeper" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap" id="skills">
+        <div class="section-head">
+          <h2>How I build</h2>
+          <p>One pipeline, not a tag cloud.</p>
+        </div>
+        <div class="pipeline">
+          <article class="skill">
+            <h3>Data</h3>
+            <p>Python, SQL, Spark, Kafka, Databricks, Delta Lake, ETL, feature engineering.</p>
+          </article>
+          <article class="skill">
+            <h3>Models</h3>
+            <p>XGBoost, LightGBM, CatBoost, TensorFlow, time series, anomaly detection, survival analysis.</p>
+          </article>
+          <article class="skill">
+            <h3>GenAI</h3>
+            <p>Transformers, RAG, LangChain, Hugging Face, embeddings, agentic workflows, prompt systems.</p>
+          </article>
+          <article class="skill">
+            <h3>Deploy</h3>
+            <p>AWS SageMaker &amp; Bedrock, Docker, EKS, FastAPI, KServe, CI/CD, MLflow, Airflow.</p>
+          </article>
+          <article class="skill">
+            <h3>Govern</h3>
+            <p>Prometheus, Grafana, SHAP, LIME, drift detection, A/B testing, labeling quality.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap" id="leadership">
+        <div class="section-head">
+          <h2>Leadership</h2>
+          <p>Community and operations alongside the technical work.</p>
+        </div>
+        <div class="leads">
+          <article class="lead-card">
+            <h3>Secretary · IGSA, Stony Brook</h3>
+            <p class="muted">2025 – 2026 · Arts &amp; Culture</p>
+            <p>Leadership team for the Indian Graduate Student Association. Helped plan and run 5+ cultural and social events, plus communications and documentation with the executive board.</p>
+          </article>
+          <article class="lead-card">
+            <h3>Senior Event Manager · PDEU</h3>
+            <p class="muted">Aug 2022 – May 2023 · Science &amp; Technical Committee</p>
+            <p>Core event management for Tesseract ’23, PDEU’s annual tech fair, leading the team with five other core members.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap" id="education">
+        <div class="section-head">
+          <h2>Education</h2>
+        </div>
+        <div class="edu-grid">
+          <article class="edu-card">
+            <h3>M.S. Data Science</h3>
+            <p class="muted">Stony Brook University · Aug 2024 – May 2026 · New York, USA</p>
+          </article>
+          <article class="edu-card">
+            <h3>B.Tech Information and Communication Technology</h3>
+            <p class="muted">Pandit Deendayal Energy University · Sep 2020 – May 2024 · Gujarat, India</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap" id="certs">
+        <div class="section-head">
+          <h2>Certifications</h2>
+          <p>Recent credentials first. Earlier coursework sits in the note below.</p>
+        </div>
+        <div class="certs">
+          <article class="cert">
+            <h3>Introduction to Model Context Protocol</h3>
+            <p class="muted">Anthropic · Aug 2026 </p> <a href="https://verify.skilljar.com/c/kyr3d42zis6o" target="_blank" rel="noreferrer">Credential</a>
+          </article>
+          <article class="cert">
+            <h3>AI Hackers ’25</h3>
+            <p class="muted">Google Cloud Skills Boost · Aug 2025</p>
+            <a href="https://www.credly.com/badges/c1d5c405-cdf5-4ab8-8b7f-af369b100792/linked_in_profilel" target="_blank" rel="noreferrer">Credential</a>
+          </article>
+          <article class="cert">
+            <h3>Zscaler Intern 2025</h3>
+            <p class="muted">Zscaler · Aug 2025</p> <a href="https://www.credly.com/badges/a928d5d3-f676-45f7-9b48-9492aa484bbc/linked_in_profile" target="_blank" rel="noreferrer">Credential</a>
+          </article>
+          <article class="cert">
+            <h3>Supervised Machine Learning: Regression and Classification</h3>
+            <p class="muted">Stanford Online · May 2023</p>
+            <a href="https://coursera.org/share/91ead512f32207f32aebaa77e7de4bc5" target="_blank" rel="noreferrer">Credential</a>
+          </article>
+          <article class="cert">
+            <h3>SQL (Intermediate)</h3>
+            <p class="muted">HackerRank · Feb 2025</p>
+            <a href="https://www.hackerrank.com/certificates/iframe/a980c66c97c7" target="_blank" rel="noreferrer">Credential</a>
+          </article>
+          <article class="cert">
+            <h3>Crash Course on Python</h3>
+            <p class="muted">Google · May 2023 · <a href="https://coursera.org/share/505f8259b4612d91ddb9274d12eff39b" target="_blank" rel="noreferrer">Credential</a></p>
+          </article>
+        </div>
+        <p class="more-certs">
+          Also: Python for Data Science (Udemy, Sep 2024), Junior Summer Experience Program (S&amp;P Global, Aug 2023),
+          SQL (Basic) (HackerRank, Feb 2025), Programming with Modern C++ (NPTEL, Apr 2023).
+        </p>
+      </section>
+
+      <section class="wrap contact" id="contact">
+        <div class="contact-box">
+          <h2>Let’s talk</h2>
+          <p class="lede">
+            Open to full-time ML / Data Scientists role. The fastest path is email.
+          </p>
+          <div class="contact-row">
+            <a class="chip" href="mailto:asthasoni161@gmail.com">asthasoni161@gmail.com</a>
+            <a class="chip" href="https://www.linkedin.com/in/asthaasoni22/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="chip" href="https://github.com/asthasoni22" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">© <span id="y"></span> Astha Soni</div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </body>
+</html>
