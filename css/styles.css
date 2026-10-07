@@ -8,6 +8,15 @@
   --teal: #1a7a72;
   --teal-deep: #135e58;
   --copper: #b85c38;
+  --hue-sage: #347563;
+  --hue-clay: #a15f43;
+  --hue-sea: #39717a;
+  --hue-sky: #56749a;
+  --hue-olive: #747d48;
+  --hue-rose: #a25c50;
+  --hue-slate: #526c83;
+  --hue-amber: #9b6c3e;
+  --hue-jade: #32766d;
   --shadow: 0 18px 40px rgba(27, 30, 36, 0.07);
   --radius: 18px;
   --max: 1120px;
@@ -168,7 +177,7 @@ h1 {
 
 .lede {
   max-width: 42rem;
-  color: var(--ink-soft);
+  color: var(--section-muted, var(--ink-soft));
   font-size: 1.18rem;
   margin: 0 0 1.4rem;
 }
@@ -189,8 +198,9 @@ h1 {
 .work article,
 .model-card,
 .edu-card {
-  background: var(--card);
-  border: 1px solid var(--line);
+  background: var(--section-fill, var(--card));
+  border: 1px solid var(--section-border, var(--line));
+  color: var(--section-ink, var(--ink));
   box-shadow: var(--shadow);
 }
 
@@ -201,7 +211,7 @@ h1 {
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
   text-decoration: none;
-  color: var(--ink);
+  color: var(--section-ink, var(--ink));
   font-size: 0.95rem;
   transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease,
     box-shadow 180ms ease;
@@ -308,13 +318,56 @@ h1 {
 }
 
 .kpi span {
-  color: var(--ink-soft);
+  color: var(--section-muted, var(--ink-soft));
   font-size: 0.92rem;
 }
 
 section {
   padding: 1.2rem 0 3.2rem;
   scroll-margin-top: 5rem;
+  --section-color: var(--teal);
+  --section-fill: color-mix(in srgb, var(--card) 92%, var(--section-color));
+  --section-border: color-mix(in srgb, var(--line) 72%, var(--section-color));
+  --section-ink: color-mix(in srgb, var(--ink) 56%, var(--section-color));
+  --section-muted: color-mix(in srgb, var(--ink-soft) 82%, var(--section-color));
+  --section-accent: color-mix(in srgb, var(--teal-deep) 35%, var(--section-color));
+  color: var(--section-ink);
+}
+
+#top {
+  --section-color: var(--hue-sage);
+}
+
+#about {
+  --section-color: var(--hue-clay);
+}
+
+#work {
+  --section-color: var(--hue-sea);
+}
+
+#projects {
+  --section-color: var(--hue-sky);
+}
+
+#skills {
+  --section-color: var(--hue-olive);
+}
+
+#leadership {
+  --section-color: var(--hue-rose);
+}
+
+#education {
+  --section-color: var(--hue-slate);
+}
+
+#certs {
+  --section-color: var(--hue-amber);
+}
+
+#contact {
+  --section-color: var(--hue-jade);
 }
 
 .section-head {
@@ -328,7 +381,7 @@ section {
 .section-head p {
   margin: 0;
   max-width: 28rem;
-  color: var(--ink-soft);
+  color: var(--section-muted);
 }
 
 h2 {
@@ -345,7 +398,7 @@ h2 {
 }
 
 .model-card dt {
-  color: var(--ink-soft);
+  color: var(--section-muted);
   font-size: 0.82rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -374,7 +427,7 @@ h2 {
 
 .role {
   margin: 0.15rem 0 0.55rem;
-  color: var(--ink-soft);
+  color: var(--section-muted);
 }
 
 .metrics {
@@ -385,15 +438,16 @@ h2 {
 }
 
 .metrics span {
-  background: var(--paper-deep);
+  background: color-mix(in srgb, var(--section-fill) 70%, var(--section-border));
   border-radius: 999px;
   padding: 0.2rem 0.7rem;
   font-size: 0.9rem;
+  color: var(--section-ink);
 }
 
 details summary {
   cursor: pointer;
-  color: var(--teal-deep);
+  color: var(--section-accent);
   font-weight: 600;
   list-style: none;
 }
@@ -433,7 +487,7 @@ details ul {
 }
 
 .muted {
-  color: var(--ink-soft);
+  color: var(--section-muted);
   margin-top: 0;
 }
 
@@ -456,7 +510,7 @@ details ul {
 
 .skill p {
   margin: 0;
-  color: var(--ink-soft);
+  color: var(--section-muted);
   font-size: 0.95rem;
 }
 
@@ -476,7 +530,7 @@ details ul {
 
 .more-certs {
   margin-top: 0.9rem;
-  color: var(--ink-soft);
+  color: var(--section-muted);
 }
 
 .contact {
@@ -484,10 +538,15 @@ details ul {
 }
 
 .contact-box {
-  background: linear-gradient(180deg, #fffbf5, #f3ebe0);
-  border: 1px solid var(--line);
+  background: var(--section-fill);
+  border: 1px solid var(--section-border);
   border-radius: 22px;
   padding: 1.6rem;
+  color: var(--section-ink);
+}
+
+section a {
+  color: var(--section-accent);
 }
 
 footer {
