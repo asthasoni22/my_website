@@ -638,8 +638,7 @@ details ul {
   animation: gallery-spin 48s linear infinite;
 }
 
-.gallery-stage:hover .gallery-spin-layer,
-.gallery-stage:focus-within .gallery-spin-layer {
+.career-gallery:hover .gallery-spin-layer {
   animation-play-state: paused;
 }
 
