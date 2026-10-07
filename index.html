@@ -278,7 +278,9 @@
         </p>
         <div class="gallery-stage">
           <div class="gallery-globe" aria-hidden="true"></div>
+          <button class="gallery-rotate gallery-rotate-previous" type="button" data-rotate="-30" aria-label="Rotate sphere left">←</button>
           <div class="gallery-orbit">
+            <div class="gallery-spin-layer">
             <button class="gallery-photo" type="button" style="--photo-angle: 0deg"
               data-photo="0" data-caption="IGSA crew, good vibes, golden memories ✨" aria-label="Open photo: IGSA crew, good vibes, golden memories ✨">
               <img src="assets/1_IGSA.jpeg" alt="IGSA crew, good vibes, golden memories ✨" loading="eager" />
@@ -327,7 +329,9 @@
               data-photo="11" data-caption="Zscaler finale: one last slide, lots of pride 🎬🚀" aria-label="Open photo: Zscaler finale: one last slide, lots of pride 🎬🚀">
               <img src="assets/12_zscaler_final_presentation.png" alt="Zscaler finale: one last slide, lots of pride 🎬🚀" loading="eager" />
             </button>
+            </div>
           </div>
+          <button class="gallery-rotate gallery-rotate-next" type="button" data-rotate="30" aria-label="Rotate sphere right">→</button>
         </div>
         <p class="gallery-hint">Select a photo to bring it into focus · The sphere keeps turning</p>
         <dialog class="photo-dialog" aria-labelledby="photo-caption">

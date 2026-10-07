@@ -27,11 +27,20 @@ if (photo) {
 const gallery = document.querySelector(".career-gallery");
 if (gallery) {
   const photos = Array.from(gallery.querySelectorAll(".gallery-photo"));
+  const orbit = gallery.querySelector(".gallery-orbit");
   const dialog = gallery.querySelector(".photo-dialog");
   const dialogImage = gallery.querySelector(".photo-dialog-image");
   const caption = gallery.querySelector("#photo-caption");
   const closeButton = gallery.querySelector(".photo-dialog-close");
   let activePhoto = 0;
+  let manualRotation = 0;
+
+  gallery.querySelectorAll("[data-rotate]").forEach((button) => {
+    button.addEventListener("click", () => {
+      manualRotation += Number(button.dataset.rotate);
+      orbit.style.transform = `rotateY(${manualRotation}deg)`;
+    });
+  });
 
   const showPhoto = (index) => {
     activePhoto = (index + photos.length) % photos.length;
